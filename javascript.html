@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript</title>
+    <style type="text/css">
+        /*disappearing circles on click*/
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+        #red-circle {
+            background-color: red;
+        }
+
+        #blue-circle {
+            background-color: blue;
+        }
+
+        #yellow-circle {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--ACCESSING ELEMENTS AND RESPONDING TO CLICK-->
+    <!--
+    <script type="text/Javascript"></script>
+
+    <p id="hw">Hello World</p>
+    <button id="mybtn"> Click Me</button>
+    <P id="PARA2"> A wonderful </P>
+    <button id="btn2"> Back</button>
+    <script type="text/javascript">
+        document.getElementById("mybtn").onclick = function () {
+            document.getElementById("hw").innerHTML = "Hello User!";
+        }
+        document.getElementById("btn2").onclick = function () {
+            document.getElementById("hw").innerHTML = "Hello World"
+        }
+    </script>
+-->
+
+    <!--DISAPPEARING CIRCLES ON CLICK-->
+    <!--    <br>
+    <div class="circle" id="red-circle"></div>
+    <div class="circle" id="blue-circle"></div>
+    <div class="circle" id="yellow-circle"></div>
+    <script type="text/javascript">
+        document.getElementById("red-circle").onclick = function () {
+            document.getElementById("red-circle").style.display = "none";
+        }
+        document.getElementById("blue-circle").onclick = function () {
+            document.getElementById("blue-circle").style.display = "none";
+        }
+        document.getElementById("yellow-circle").onclick = function () {
+            document.getElementById("yellow-circle").style.display = "none";
+        }
+    </script>
+-->
+
+    <!--USE OF VARIABLES-->
+    <!--    <br>
+    <div>
+        <h2>Use of Variables</h2>
+        <input type="text" id="inp-box">
+        <button id="chg-btn"> Change Text </button>
+        <p id="text">Your Text Here</p>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("chg-btn").onclick = function () {
+           var textEntered = "";
+           textEntered="This page says " + document.getElementById("inp-box").value;
+           document.getElementById("text").innerHTML=textEntered;
+        }  
+    </script>-->
+
+    <!--USE OF ARRAYS-->
+    <!--
+    <script type="text/Javascript">
+    var myArray = new Array();
+    myArray[0] = "apple";
+    myArray[1] = "orange";
+    var tweets = ["Morning everybody!", "I love coffee!"];
+    tweets.push("Sunday fun-day!");
+    tweets.splice(1,0, "august");
+    alert(myArray [1]); 
+</script>
+-->
+
+    <!--USE OF IF ELSE STATEMENTS-->
+<!--
+    <p> What is the magic word? </p>
+    <p> <input type="type/text" id="magicWord"> </p>
+    <p> <button id="checkMagicWord"> Submit </button> </p>
+    <script type="text/javascript">
+        document.getElementById("checkMagicWord").onclick=function() {
+            var magicWordEntered = document.getElementById("magicWord").value;
+            var magicWord = "abracadabra";
+            if (magicWordEntered == magicWord) {
+                alert ("You got it!");
+            }
+            else {
+                alert ("Nope, try again!");
+            }
+        }
+    </script>
+-->
+
+<!-- HOW MANY FINGERS GAME -->
+
+<p>How many fingers am I holding up?</p>
+<p> <input type="text" id="guess"><button id="checkGuess"> Guess! </button> </p>
+<script type="text/javascript">
+    document.getElementById ("checkGuess").onclick = function(){
+        var randomNumber = Math.random ();
+        randomNumber = randomNumber *6;
+        randomNumber = Math.floor(randomNumber);
+        if (document.getElementById ("guess").value == randomNumber){
+            alert ("Well done! You've got it!")
+        }
+        else {
+            alert ("Nope! The number was " + randomNumber);
+        }
+    }
+</script>
+
+</body>
+
+</html> 
