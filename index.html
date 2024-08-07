@@ -96,7 +96,7 @@
 -->
 
     <!--USE OF IF ELSE STATEMENTS-->
-<!--
+    <!--
     <p> What is the magic word? </p>
     <p> <input type="type/text" id="magicWord"> </p>
     <p> <button id="checkMagicWord"> Submit </button> </p>
@@ -114,24 +114,63 @@
     </script>
 -->
 
-<!-- HOW MANY FINGERS GAME -->
+    <!-- HOW MANY FINGERS GAME -->
 
-<p>How many fingers am I holding up?</p>
-<p> <input type="text" id="guess"><button id="checkGuess"> Guess! </button> </p>
-<script type="text/javascript">
-    document.getElementById ("checkGuess").onclick = function(){
-        var randomNumber = Math.random ();
-        randomNumber = randomNumber *6;
-        randomNumber = Math.floor(randomNumber);
-        if (document.getElementById ("guess").value == randomNumber){
-            alert ("Well done! You've got it!")
+    <p>How many fingers am I holding up?</p>
+    <p> <input type="text" id="guess"><button id="checkGuess"> Guess! </button> </p>
+    <script type="text/javascript">
+        document.getElementById("checkGuess").onclick = function () {
+            var randomNumber = Math.random();
+            randomNumber = randomNumber * 6;
+            randomNumber = Math.floor(randomNumber);
+            if (document.getElementById("guess").value == randomNumber) {
+                alert("Well done! You've got it!")
+            }
+            else {
+                alert("Nope! The number was " + randomNumber);
+            }
         }
-        else {
-            alert ("Nope! The number was " + randomNumber);
+    </script>
+
+    <!-- FOR LOOP USE -->
+
+    
+    <!-- WHILE LOOP USE -->
+    <!--
+    <p> How many fingers are you holding up?</p>
+    <p> <select id="mynumber">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select><button id="guess"> Guess </button> </p>
+    <script type="text/javascript">
+        document.getElementById("guess").onclick = function () {
+            var mynumber = document.getElementById("mynumber").value;
+            var gotIt = false;
+            var numberofGuesses = 1;
+            while (gotIt == false) {
+                var guess = Math.random();
+                guess = guess * 6;
+                guess = Math.floor(guess);
+                if (guess == mynumber) {
+                    //compter is correct
+                    gotIt = true;
+                    alert("Got it! It was " + guess + ". It took me " + numberofGuesses + " guesses.")
+                }
+                else {
+                    //computer is wrong
+                    numberofGuesses++;
+                }
+            }
         }
-    }
-</script>
+    </script>
+-->
+
+
 
 </body>
 
-</html> 
+</html>
