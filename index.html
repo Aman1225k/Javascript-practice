@@ -117,13 +117,13 @@
     <!-- HOW MANY FINGERS GAME -->
 
     <p>How many fingers am I holding up?</p>
-    <p> <input type="text" id="guess"><button id="checkGuess"> Guess! </button> </p>
+    <p> <input type="text" id="guess1"><button id="checkGuess1"> Guess! </button> </p>
     <script type="text/javascript">
-        document.getElementById("checkGuess").onclick = function () {
+        document.getElementById("checkGuess1").onclick = function () {
             var randomNumber = Math.random();
             randomNumber = randomNumber * 6;
             randomNumber = Math.floor(randomNumber);
-            if (document.getElementById("guess").value == randomNumber) {
+            if (document.getElementById("guess1").value == randomNumber) {
                 alert("Well done! You've got it!")
             }
             else {
@@ -133,10 +133,17 @@
     </script>
 
     <!-- FOR LOOP USE -->
-
-    
+     <!--
+    <script type="text/javascript">
+        var tweets = [ "Hello everyone!", "Nice to talk!", "But talk to you later!","Stay tuned!", "Bye guys!"]
+        for (var i=0; i<tweets.length ; i++ )
+        {
+            alert (tweets [i]);
+        }
+    </script>
+-->
     <!-- WHILE LOOP USE -->
-    <!--
+    
     <p> How many fingers are you holding up?</p>
     <p> <select id="mynumber">
             <option>0</option>
@@ -145,20 +152,20 @@
             <option>3</option>
             <option>4</option>
             <option>5</option>
-        </select><button id="guess"> Guess </button> </p>
+        </select><button id="guess2"> Guess </button> </p>
     <script type="text/javascript">
-        document.getElementById("guess").onclick = function () {
+        document.getElementById("guess2").onclick = function () {
             var mynumber = document.getElementById("mynumber").value;
             var gotIt = false;
             var numberofGuesses = 1;
             while (gotIt == false) {
-                var guess = Math.random();
-                guess = guess * 6;
-                guess = Math.floor(guess);
-                if (guess == mynumber) {
+                var guess2 = Math.random();
+                guess2 = guess2 * 6;
+                guess2 = Math.floor(guess2);
+                if (guess2 == mynumber) {
                     //compter is correct
                     gotIt = true;
-                    alert("Got it! It was " + guess + ". It took me " + numberofGuesses + " guesses.")
+                    alert("Got it! It was " + guess2 + ". It took me " + numberofGuesses + " guesses.")
                 }
                 else {
                     //computer is wrong
@@ -167,7 +174,7 @@
             }
         }
     </script>
--->
+
 
 
 
