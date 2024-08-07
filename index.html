@@ -31,12 +31,12 @@
 
 <body>
     <!--ACCESSING ELEMENTS AND RESPONDING TO CLICK-->
-    <!--
+    
     <script type="text/Javascript"></script>
 
     <p id="hw">Hello World</p>
-    <button id="mybtn"> Click Me</button>
-    <P id="PARA2"> A wonderful </P>
+    <button id="mybtn"> CHANGE</button>
+    
     <button id="btn2"> Back</button>
     <script type="text/javascript">
         document.getElementById("mybtn").onclick = function () {
@@ -46,10 +46,11 @@
             document.getElementById("hw").innerHTML = "Hello World"
         }
     </script>
--->
+
 
     <!--DISAPPEARING CIRCLES ON CLICK-->
-    <!--    <br>
+    <br>
+    <p>Touch each circle to vanish it</p>
     <div class="circle" id="red-circle"></div>
     <div class="circle" id="blue-circle"></div>
     <div class="circle" id="yellow-circle"></div>
@@ -64,15 +65,15 @@
             document.getElementById("yellow-circle").style.display = "none";
         }
     </script>
--->
+<br>
 
     <!--USE OF VARIABLES-->
-    <!--    <br>
+    <br>
     <div>
         <h2>Use of Variables</h2>
         <input type="text" id="inp-box">
         <button id="chg-btn"> Change Text </button>
-        <p id="text">Your Text Here</p>
+        <p id="text">Your changed text</p>
     </div>
     <script type="text/javascript">
         document.getElementById("chg-btn").onclick = function () {
@@ -80,23 +81,25 @@
            textEntered="This page says " + document.getElementById("inp-box").value;
            document.getElementById("text").innerHTML=textEntered;
         }  
-    </script>-->
+    </script>
 
     <!--USE OF ARRAYS-->
-    <!--
+   
+    <br>
     <script type="text/Javascript">
     var myArray = new Array();
     myArray[0] = "apple";
-    myArray[1] = "orange";
+    myArray[1] = "Array-orange";
     var tweets = ["Morning everybody!", "I love coffee!"];
     tweets.push("Sunday fun-day!");
     tweets.splice(1,0, "august");
-    alert(myArray [1]); 
+    
 </script>
--->
+
 
     <!--USE OF IF ELSE STATEMENTS-->
-    <!--
+    
+    <br>
     <p> What is the magic word? </p>
     <p> <input type="type/text" id="magicWord"> </p>
     <p> <button id="checkMagicWord"> Submit </button> </p>
@@ -112,10 +115,12 @@
             }
         }
     </script>
--->
+
 
     <!-- HOW MANY FINGERS GAME -->
 
+
+    <br>
     <p>How many fingers am I holding up?</p>
     <p> <input type="text" id="guess1"><button id="checkGuess1"> Guess! </button> </p>
     <script type="text/javascript">
@@ -133,17 +138,19 @@
     </script>
 
     <!-- FOR LOOP USE -->
-     <!--
+    
+    <br>
     <script type="text/javascript">
-        var tweets = [ "Hello everyone!", "Nice to talk!", "But talk to you later!","Stay tuned!", "Bye guys!"]
+        var tweets = [ "Hello everyone!", "Nice to talk!", "Stay tuned!"]
         for (var i=0; i<tweets.length ; i++ )
         {
             alert (tweets [i]);
         }
     </script>
--->
+
     <!-- WHILE LOOP USE -->
     
+    <br>
     <p> How many fingers are you holding up?</p>
     <p> <select id="mynumber">
             <option>0</option>
